@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Bus stop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link
+rel="stylesheet"
+type="text/css"
+href="/stylesheets/facilities_services1.css"
+/>
+<link
+href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+rel="stylesheet"
+/>
+</head>
+</head>
+
+<body>
+
+<h1>BUS STOP</h1>
+
+<div class="images" >
+  <img  class="mySlides" src="/assests/services_images/bus/bus1.jpg" style="width:100%">
+  <img class="mySlides" src="/assests/services_images/bus/bus2.jpg" style="width:100%">
+  <img class="mySlides" src="/assests/services_images/bus/bus3.jpg" style="width:100%">
+  <img  class="mySlides" src="/assests/services_images/bus/bus4.jpg" style="width:100%">
+  <img  class="mySlides" src="/assests/services_images/bus/bus5.jpg" style="width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="content">
+<br><h3>TMT BUS STOP</h3>
+<p>Kolshet road,vice city.<br>
+Contact:-02224 25566<br>
+email:-tmt@gmail.com
+</p><br>
+<h3>KELKAR BUS STOP</h3>
+<p>Joshi chawk ,vice city<br>
+Contact:-02224 11227<br>
+email:-kelkar@gmail.com
+</p><br>
+<h3>NAGDA BUS STOP</h3>
+<p>nagda junction,vice city.<br>
+Contact:-02224 44999<br>
+email:-nagda@gmail.com
+</p><br>
+</div>
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+
+
+

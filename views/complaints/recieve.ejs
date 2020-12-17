@@ -1,0 +1,57 @@
+<html>
+  <head>
+  	<link rel="stylesheet" href="/stylesheets/recieve.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      .pagination {
+        display: inline-block;
+        font-size: 20px;
+        
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 9px 18px;
+        text-decoration: none;
+        
+      }
+      .pagination a.active {
+       background-color: #4CAF50;
+        color: white;
+       }
+
+      .pagination a:hover:not(.active) {background:linear-gradient(57deg,#1e4d92,#00c6a7);}
+      </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>COMPLAINT LIST</h2>
+    </div>
+
+    
+    <i class="fal fa-envelope"></i>
+    <div class="container">
+      <div class="column">
+        <% complaints.forEach((complaint, i)=>{ %>
+          <div class="card">
+            <div class="info">
+                <div>
+               <h2><%= i + 1 %>. Complaint</h2></div>
+               <div>
+                 <p class="profile">Name: <%= complaint.name %> Address: <%= complaint.address %> Date: <%= formatDate(complaint.createdAt) %> </p>
+                </div></div>
+                <% if(typeof complaint.checkbox !== 'undifined'){%>
+                  <p style="margin: 1rem auto;"> <strong> Issues: </strong> <%= complaint.checkbox %></p>
+                <%}%>
+               <p><%= complaint.complaint%></p>
+               <a href="mailto:<%= complaint.complaintBy.email %>">Send Email: <%= complaint.complaintBy.email %><i class="material-icons" style="font-size:30px;color: black;">email</i></a>
+     
+             </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>POLICE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+rel="stylesheet"
+type="text/css"
+href="/stylesheets/facilities_services1.css"
+/>
+<link
+href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+rel="stylesheet"
+/>
+</head>
+
+</head>
+
+<body>
+
+<h1>POLICE STATION </h1>
+
+<div class="images" >
+  <img  class="mySlides" src="/assests/services_images/police/police1.jpg" style="width:100%">
+  
+  <img class="mySlides" src="/assests/services_images/police/police3.jpg" style="width:100%">
+  <img  class="mySlides" src="/assests/services_images/police/police4.jpg" style="width:100%">
+  <img  class="mySlides" src="/assests/services_images/police/police5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="content">
+<br><h3>POLICE STATION</h3>
+<p>N S Road ,vice city.<br>
+Contact:-02224 24968<br>
+email:-bkc@gmail.com
+</p><br>
+<h3>TILAK NAGAR POLICE STATION</h3>
+<p>Tilak nagar ,vice city<br>
+Contact:-02224 13579<br>
+email:-tilaknagar@gmail.com
+</p><br>
+<h3>APMC POLICE STATION</h3>
+<p>APMC nagar, vice city.<br>
+Contact:-02224 98765<br>
+email:-apmc@gmail.com
+</p><br>
+</div>
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+

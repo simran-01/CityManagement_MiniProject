@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 8%;
+}
+
+.Icons {
+  text-align: center;
+}
+
+.Icons img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  font-family: "Montserrat", sans-serif;
+}
+.top {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  width: 70%;
+  height: 7%;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-bottom: 7%;
+  text-align: center;
+  color: black;
+}

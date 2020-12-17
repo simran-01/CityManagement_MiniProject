@@ -1,0 +1,64 @@
+<!Doctype html>
+<head>
+     <title>
+         Waste management complaint
+     </title>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/complaints.css">
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <form action="/complaint/complaintregister" method="POST">
+            <input type="hidden" name="category" value="waste_management">
+    
+        <div class="heading">
+        <h1>Please Fill the Form to Register Complaint</h1><br>
+        <label>Name:
+        <input type class="name"="text" placeholder="Enter your name" name="name" />
+        </label><br><br>
+        <label>Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60">
+        </textarea>
+
+        </div>
+
+        <section>
+            <p>Select if your issue is mentioned below: </p>
+            <div class="options">
+
+        <input type="checkbox" id="waste_management1" name="check" value=" Improper collection of waste">
+       <label for class="label-align"="waste_management1" >Improper collection of waste</label><br>
+
+       <input type="checkbox" id="waste_management2" name="check" value=" Improper management of e-waste">
+       <label for class="label-align"="waste_management2">Improper management of e-waste</label><br>
+
+       <input type="checkbox" id="waste_management3" name="check" value="Not proper recycling of waste">
+       <label for class="label-align"="waste_management3">Not proper recycling of waste</label><br>
+
+       <input type="checkbox" id="waste_management4" name="check" value="Problem of landfills for garbage dumpings">
+       <label for class="label-align"="waste_management4">Problem of landfills for garbage dumpings</label>
+       <br><br>
+    
+    </section>
+    </div>
+     <div class="others">
+         
+         <label for="others">Explain your issue in detail here:<br></label>
+
+         <textarea id="waste management others" name="others" rows="20" cols="70">
+  
+     </textarea>
+     </div>
+     <br>
+     <div class="submit">
+         <input type="submit">
+     </div>
+
+       
+
+    
+</form>
+</center>
+</body>
+
+</html>

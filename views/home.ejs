@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>City Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<% if(message){%>
+    <div class="success-msg">
+        <img src="/assests/thanks.jpg" alt="">
+    </div>
+<%}%>
+<header class="site-headers">
+    
+    <nav>
+        <div class="logo">
+            <h1>Vice City</h1>
+        </div>
+    
+    <div class="menu">
+         <ul>
+            <li><a href="/">HOME</a> </li>
+            <li><a href="/facilitiesandservices">FACILITIES/SERVICES</a></li>
+            <li><a href="/complaint">COMPLAINT REGISTRATION</a></li>
+            <%if(user !== ''){%>
+                <li><a href="/logout">LOGOUT</a></li>
+              <%}%>
+        </ul>
+    </div>
+</nav>
+<section>
+    <div class="leftside">
+       <img src="/assests/proj.png">
+    </div>
+    <div class="rightside">
+        <h1>City Management Website</h1>
+        <p>Our City , Our Responsibility!!!</p>
+        <a href="/login">Get Started</a>
+       
+
+    </div>
+
+</section>
+</header>
+
+
+<section>
+    <div class="bottom">
+        <h1>ABOUT US</h1>
+        <p>Vice City was found in the year 2001 and is one of 
+the most esteemed city and to make it best among all there's need of efficient management.So,here we digitally manage our respected city in every aspect especially complaints of citizens.This website is a platform for citizens to explore the city and while facing any issue they can easily register their complaints.Admins can easily login and recieve all the complaints then respond for the same. </p>
+        <h1>Our Team Members</h1>
+        <div class="team">
+        <img src="/assests/simran.png" alt="simran">
+        <img src="/assests/zikra.jpg" alt="zikra">
+        <img src="/assests/rabiya.jpg" alt="rabiya">
+        <img src="/assests/muskan2.jpg" alt="muskan">
+        </div>
+        <div class="team_info">
+            <p>Mapari Simran</p>
+            <p>Shaikh Zikra</p>
+            <p>Pangarkar Rabiya</p>
+            <p>Khan Muskan</p>
+            </div>
+        <h1>TO CONTACT US</h1>
+        <p>Email:&nbsp;<a href="">vicecity@mycity.ac.in</a></p>
+        <p>Cell:&nbsp;<a href="">+2549556778</a></p>
+</div>
+</section>
+
+    <footer class="footer">
+
+    </footer>
+
+
+
+</body>
+</html>

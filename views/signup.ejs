@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <div class="container">
+      <div class="icon">
+        <img src="/assests/login.png" />
+      </div>
+      <div class="login-page">
+        <div class="form">
+          <form class="register-form" action="/auth/register" method="POST">
+            <h2>REGISTER HERE</h2>
+            <input type="text" name="username" placeholder="username" />
+            <input type="password" name="password" placeholder="password" />
+            <input type="text" name="email" placeholder="email-id" />
+            <input type="text" name="contact" placeholder="contact no." />
+            <div class="age">
+              <label for="Age">DOB</label>
+              <input type="date" id="Age" name="dob" />
+            </div>
+
+            <select id="Blood Group" name="bloodgroup">
+              <option value="Blood Group">Blood Group</option>
+              <option value="A">A+</option>
+              <option value="A+">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+            <select id="Gender" name="gender">
+              <option vaue="Gender">Gender</option>
+              <option value="MALE">MALE</option>
+              <option value="FEMALE">FEMALE</option>
+              <option value="OTHERS">OTHERS</option>
+            </select>
+            <select id="Type" name="type">
+              <option value="citizen">CITIZEN</option>
+              <option value="admin">ADMIN</option>
+            </select>
+
+            <button>SIGN UP</button>
+            <p class="message">Already Registered? <a href="#">Login</a></p>
+          </form>
+
+          <form class="login-form" action="/auth/login" method="POST">
+            <h2>LOGIN HERE</h2>
+            <input type="text" placeholder="username" name="username" />
+            <input type="password" placeholder="password" name="password" />
+
+            <button>login</button>
+            <p class="message">Not Registered? <a href="#">Register here</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+      $(".message a").click(function () {
+        $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+      });
+      
+    </script>
+  </body>
+</html>

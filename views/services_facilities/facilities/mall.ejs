@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>MALLS</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/mall/mall7.jpg"
+        style="width: 100%"
+      />
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>TEHRANPARS MALL</h3>
+      <p>
+        Shopping mall,Edappally,vice city.<br />
+        Timings: 10.00am- 10.30pm<br />
+        email:- tehranparsmall@gmail.com 
+      </p>
+      <br />
+      <h3>DLF MALL</h3>
+      <p>
+        Sector 22,vice city.<br />
+        Timings: 09.00am- 11.00pm<br />
+        email:- dlfmall@gmail.com
+      </p>
+      <br />
+      <h3>Z SQUARE MALL</h3>
+      <p>
+        JLN Marg,Malviya nagar,vice city.<br />
+        Timings: 11.00am- 10.00pm<br />
+        email:- zsquaremall@gmail.com
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

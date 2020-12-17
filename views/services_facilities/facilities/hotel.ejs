@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>HOTELS</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/hotel/hotel7.jpg"
+        style="width: 100%"
+      />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>CAPITAL HOTEL</h3>
+      <p>
+        sector 11,Nagaon road,vice city.<br />
+        contact:- 0222 23332<br />
+        email:- capitalhotel@gmail.com 
+      </p>
+      <br />
+      <h3>ACQUALINA HOTEL</h3>
+      <p>
+        Santosh Nagar,vice city.<br />
+        contact:- 0224 53263<br />
+        email:- acqualinehotel@gmail.com
+      </p>
+      <br />
+      <h3>FOUR SEASON HOTEL</h3>
+      <p>
+        cocona bhawana, sector 11,vice city.<br />
+        Timings:- 10.00am-2.00pm and 8.00pm-1.00am<br />
+        contact:-. 022 5678 897641<br />
+        email:- fourseasonhotel@gmail.com
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

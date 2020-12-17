@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(57deg,#e4eceb,#eff1f5);
+    
+}
+.services {
+    margin: 90px auto;
+    text-align: center;
+}
+h1{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    background: linear-gradient(57deg,#00c6a7,#1e4d92);
+    width: 50%;
+    color:white;
+    margin-left:22%;
+
+}
+h1:after
+{
+    content: '';
+    background: white;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 3px auto;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 10px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    
+}
+.col-md-3:hover{
+    box-shadow: 5px 7px 9px -3px rgba(95, 200, 231, 0.5);
+    cursor: pointer;
+}

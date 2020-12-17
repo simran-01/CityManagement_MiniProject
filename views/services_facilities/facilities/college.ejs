@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>COLLEGE</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/college/college7.jpg"
+        style="width: 100%"
+      />
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>P.G.D.A.V. COLLEGE</h3>
+      <p>
+        Nehru Nagar,vice city.<br />
+        Contact:- 02232 71267<br />
+        email:- pgdavcollege@gmail.com 
+      </p>
+      <br />
+      <h3>D.G INTERNATIONAL COLLEGE</h3>
+      <p>
+        Dn nagar,vice city.<br />
+        Contact:- 02244 66327<br />
+        email:- dginternationalcollege@gmail.com
+      </p>
+      <br />
+      <h3>NEW EAR COLLEGE</h3>
+      <p>
+        Line road,vice city.<br />
+        Contact:- 02222 18734<br />
+        email:- newearcollege@gmail.com
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

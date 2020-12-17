@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 70%;
+  margin: auto;
+}
+.submit input {
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  color: white;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px;
+  display: table;
+}
+.heading h1 {
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  color: white;
+}
+.heading label {
+  font-weight: bold;
+  font-size: 17px;
+}
+.others {
+  font-weight: bolder;
+}
+p {
+  font-weight: bold;
+}
+
+.label-align {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.name {
+  width: 35%;
+  height: 4vh;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>LIBRARY</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/library/library1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/library/library2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/library/library3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/library/library4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/library/library5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/library/library6.jpg"
+        style="width: 100%"
+      />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>CENTRAL LIBRARY</h3>
+      <p>
+        IIT Area,vice city.<br />
+        Timings:- on working day:7.30am-7.00pm.<br />
+        On Holidays:9.00am-5.00pm.<br />
+        During Examination:7.30am-9.30m.<br />
+        contact:- 022 2345 7654<br />
+        email:- centerallibrary@gmail.com<br />
+      </p>
+      <br />
+      <h3>IDEAL LIBRARY</h3>
+      <p>
+        Chandrai Arade, Office no.432,vice city.<br />
+        Timings:- on working day:8.00am-7.00pm.<br />
+        On Holidays:10.00am-6.00pm.<br />
+        During Examination:7.30am-9.30m.<br />
+        contact:- 022 7745 4554<br />
+        email:- ideallibrary@gmail.com<br />
+      </p>
+      <br />
+      <h3>ORIENTAL LIBRARY</h3>
+      <p>
+        Old Navy Nagar,vice city.<br />
+        Timings:- on working day:7.00am-7.30pm.<br />
+        On Holidays:9.30am-5.30pm.<br />
+        during Examination:7.30am-9.30m.<br />
+        contact:- 022 9876 7854<br />
+        email:- orientallibrary@gmail.com<br />
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

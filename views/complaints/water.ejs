@@ -1,0 +1,64 @@
+<!Doctype html>
+<head>
+     <title>
+     </title>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/complaints.css">
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+
+    <form action="/complaint/complaintregister" method="POST">
+        <input type="hidden" name="category" value="water">
+    
+        <div class="heading">
+        <h1>Please Fill the Form to Register Complaint</h1><br>
+        <label>Name:
+        <input type class="name"="text" placeholder="Enter your name" name="name"/>
+        </label><br><br>
+        <label>Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60">
+        </textarea>
+
+        </div>
+
+        <section>
+            <p>Select if your issue is mentioned below: </p>
+            <div class="options">
+
+        <input type="checkbox" id="water1" name="check" value="Shortage of water">
+       <label for class="label-align"="water1" >Shortage of water </label><br>
+
+       <input type="checkbox" id="water2" name="check" value="Supply of unclean and unhygienic water">
+       <label for class="label-align"="water2">Supply of unclean and unhygienic water</label><br>
+
+       <input type="checkbox" id="water3" name="check" value="Issues related to pipe lines">
+       <label for class="label-align"="water3">Issues related to pipe lines</label><br>
+
+       <input type="checkbox" id="water4" name="check" value="Irregular water supply">
+       <label for class="label-align"="water4">Irregular water supply</label>
+       <br><br>
+    
+    </section>
+    </div>
+     <div class="others">
+         
+         <label for="others">Explain your issue in detail here:<br></label>
+
+         <textarea id="waterothers" name="others" rows="20" cols="70">
+  
+     </textarea>
+     </div>
+     <br>
+     <div class="submit">
+         <input type="submit" />
+     </div>
+
+       
+
+    
+</form>
+</center>
+</body>
+
+</html>

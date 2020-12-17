@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>PLAYGROUND</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/playground/play7.jpg"
+        style="width: 100%"
+      />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>SHADES OF PLAY</h3>
+      <p>
+        Grove st,vice city.<br />
+        Timings:- 7.00am-11.00m and 3.00pm-6.00pm<br />
+        email:- shadesofplay@gmail.com<br />
+      </p>
+      <br />
+      <h3>BARWICK PARK</h3>
+      <p>
+        Golden meadow road,vice city.<br />
+        Timings:- 8.00am-12.00pm and 4.00pm-7.00pm<br />
+        email:- barwickpark@gmail.com<br />
+      </p>
+      <br />
+      <h3>DOCK ROAD PARK</h3>
+      <p>
+        Dock road,vice city.<br />
+        Timings:- 9.00am-11.00pm and 5.00pm-7.00am<br />
+        email:- dockroadpark@gmail.com<br />
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

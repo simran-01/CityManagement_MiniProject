@@ -1,0 +1,64 @@
+<!Doctype html>
+<head>
+     <title>
+    
+     </title>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/complaints.css">
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <form action="/complaint/complaintregister" method="POST">
+            <input type="hidden" name="category" value="road">
+    
+        <div class="heading">
+        <h1>Please Fill the Form to Register Complaint</h1><br>
+        <label>Name:
+        <input type="text" class="name" placeholder="Enter your name" />
+        </label><br><br>
+        <label>Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60">
+        </textarea>
+
+        </div>
+
+        <section>
+            <p>Select if your issue is mentioned below: </p>
+            <div class="options">
+
+        <input type="checkbox" id="road1" name="check" value="Lack of signals,road markings at intersection">
+       <label for class="label-align"="road1" >Lack of signals,road markings at intersection </label><br>
+
+       <input type="checkbox" id="road2" name="check" value="Limited road side space availabilty">
+       <label for class="label-align"="road2">Limited road side space availabilty</label><br>
+
+       <input type="checkbox" id="road3" name="check" value="Open drains">
+       <label for class="label-align"="road3">Open drains</label><br>
+
+       <input type="checkbox" id="road4" name="check" value="Excessive pavement edge drain offs">
+       <label for class="label-align"="road4">Excessive pavement edge drain offs</label>
+       <br><br>
+    
+    </section>
+    </div>
+     <div class="others">
+         
+         <label for="others">Explain your issue in detail here:<br></label>
+
+         <textarea id="roadothers" name="others" rows="20" cols="70">
+  
+     </textarea>
+     </div>
+     <br>
+     <div class="submit">
+         <input type="submit">
+     </div>
+
+       
+
+    
+</form>
+</center>
+</body>
+
+</html>

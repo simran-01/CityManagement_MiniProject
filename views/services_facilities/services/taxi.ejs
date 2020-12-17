@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+rel="stylesheet"
+type="text/css"
+href="/stylesheets/facilities_services1.css"
+/>
+<link
+href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+rel="stylesheet"
+/>
+</head>
+
+
+</head>
+
+<body>
+
+<h1>TAXI/CAB</h1>
+
+<div class="images" >
+  <img  class="mySlides" src="/assests/services_images/taxi/taxi1.jpg" style="width:100%">
+  <img class="mySlides" src="/assests/services_images/taxi/taxi2.jpg" style="width:100%">
+  <img class="mySlides" src="/assests/services_images/taxi/taxi3.jpg" style="width:100%">
+  <img  class="mySlides" src="/assests/services_images/taxi/taxi4.jpg" style="width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="content">
+<br><h3>QUICK CAB</h3>
+ <p> Wagle Estate rd,vice city.<br>
+Contact:- 02224 25566<br>
+email:- quickcab@gmail.com 
+</p><br>
+<h3>TAXI STAND</h3>
+<p>Municipal corporate office ,vice city<br>
+Contact:- 02224 11298<br>
+email:- taxistand@gmail.com
+</p><br>
+<h3>TAXI SERVICE</h3>
+<p>Ghodbundar road , vice city.<br>
+Contact:- 02224 46688<br>
+email:- taxiservice@gmail.com
+</p><br>
+</div>
+</body>
+</html>
+</body>
+</html>

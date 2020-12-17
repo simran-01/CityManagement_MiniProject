@@ -1,0 +1,40 @@
+<!Doctype html>
+<head>
+     <title>
+    
+     </title>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/complaints.css">
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <form action="/complaint/complaintregister" method="POST">
+            <input type="hidden" name="category" value="otherComplaint">
+    
+        <div class="heading">
+        <h1>Please Fill the Form to Register Complaint</h1><br>
+        <label>Name:
+        <input type class="name"="text" placeholder="Enter your name" />
+        </label><br><br>
+        <label>Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60">
+        </textarea>
+
+        </div>
+     <div class="others">
+         
+         <label for="others">Please mention your issue here:<br></label>
+
+         <textarea id="others" name="others" rows="20" cols="70">
+  
+     </textarea>
+     </div>
+     <br>
+     <div class="submit">
+         <input type="submit">
+     </div>    
+</form>
+</center>
+</body>
+
+</html>

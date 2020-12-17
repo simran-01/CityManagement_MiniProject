@@ -1,0 +1,59 @@
+<!Doctype html>
+<head>
+     <title>
+     </title>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/complaints.css">
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+<form action="/complaint/complaintregister" method="POST">
+    <input type="hidden" name="category" value="electricity">
+        <div class="heading">
+        <h1>Please Fill the Form to Register Complaint</h1><br>
+        <label>Name:
+        <input type class="name"="text" placeholder="Enter your name" name="name" />
+        </label><br><br>
+        <label>Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60">
+        </textarea>
+
+        </div>
+
+        <section>
+            <p>Select if your issue is mentioned below: </p>
+            <div class="options">
+
+        <input type="checkbox" id="electricity1" name="check" value="Getting High Electricity bill">
+       <label for class="label-align"="electricity1" >Getting High Electricity bill </label><br>
+
+       <input type="checkbox" id="electricity2" name="check" value="Irregular Power Cutoff">
+       <label for class="label-align"="electricity2">Irregular Power Cutoff</label><br>
+
+       <input type="checkbox" id="electricity3" name="check" value="Defect in working of meter">
+       <label for class="label-align"="electricity3">Defect in working of meter</label><br>
+
+       <input type="checkbox" id="electricity4" name="check" value="Problem in connection">
+       <label for class="label-align"="electricity4">Problem in connection</label>
+       <br><br>
+    
+    </section>
+    </div>
+     <div class="others">
+         
+         <label for="others">Explain your issue in detail here:<br></label>
+
+         <textarea id="electricityothers" name="others" rows="20" cols="70">
+  
+     </textarea>
+     </div>
+     <br>
+     <div class="submit">
+         <input type="submit" />
+     </div>
+    
+</form>
+</center>
+</body>
+
+</html>

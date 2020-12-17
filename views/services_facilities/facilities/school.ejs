@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>SCHOOLS</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school2.jpg"
+        style="width: 100%"
+      />
+
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/school/school7.jpg"
+        style="width: 100%"
+      />
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>RAINBOW INTERNATIONAL SCHOOL</h3>
+      <p>
+        Ghodbundar road,vice city.<br />
+        Contact:- 02224 76537<br />
+        email:- rainbowinternaionalschool@gmail.com 
+      </p>
+      <br />
+      <h3>QUEEN MARY'S HIGH SCHOOL</h3>
+      <p>
+        Tanwar nagra,kausa,vice city.<br />
+        Contact:- 02244 99877<br />
+        email:- queenmary'shighschool@gmail.com
+      </p>
+      <br />
+      <h3>EURO SCHOOL</h3>
+      <p>
+        New link road,vice city.<br />
+        Contact:- 02234 11234<br />
+        email:- euroschool@gmail.com
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.site-headers {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  color: white;
+}
+.logo {
+  width: 100%;
+  height: 50px;
+}
+.logo h1 {
+  line-height: 100px;
+  padding-left: 50px;
+  text-align: justify;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive;
+}
+.menu {
+  width: 100%;
+  height: 50px;
+}
+.menu ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu ul li {
+  list-style: none;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+}
+.leftside {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.leftside img {
+  height: 500px;
+  width: 600px;
+}
+.rightside {
+  width: 50%;
+  height: 300px;
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+  padding: 50px;
+}
+.rightside h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.rightside p {
+  font-size: 30px;
+  padding: 30px 0%;
+  font-family: "Montserrat", sans-serif;
+}
+.rightside a {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 25px;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 18px;
+}
+.rightside a:hover {
+  background: linear-gradient(57deg, #1e4d92, #00c6a7);
+}
+.bottom {
+  margin-top: 18px;
+  margin-right: 19px;
+}
+.bottom h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  padding: 25%, 25%;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  border: 2px solid white;
+  width: 30%;
+  height: 8%;
+  margin-top: 4%;
+  margin-left: 35%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.bottom p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer {
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  width: 100%;
+  margin-top: 10rem;
+  min-height: 3vh;
+}
+.team img {
+  border-radius: 55%;
+  height: 32vh;
+  image-orientation: 0deg;
+}
+.team {
+  display: flex;
+  justify-content: space-around;
+}
+.team_info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.success-msg {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: success 100ms linear 1.5s forwards;
+}
+
+@keyframes success {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.success-msg img {
+  display: block;
+  margin: auto;
+}

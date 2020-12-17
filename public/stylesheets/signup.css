@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page {
+  width: 360px;
+}
+
+.form {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.form input[type="text"],
+[type="password"],
+select {
+  font-family: "Roboto", sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.form label {
+  font-family: "Roboto", sans-serif;
+  outline: 1;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 0 15px;
+  border: 0;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  width: 75%;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+  background: linear-gradient(57deg, #1e4d92, #00c6a7);
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: black;
+  font-size: 16px;
+}
+
+.form .message a {
+  color: #050c05;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
+.icon {
+  margin: 10px;
+}
+.icon img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+.age {
+  width: 100%;
+  text-align: left;
+  background: #f2f2f2;
+  margin-bottom: 9px;
+  padding: 10px 0px;
+  font-weight: lighter;
+}
+.age label {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}

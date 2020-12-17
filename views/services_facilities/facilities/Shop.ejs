@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>SHOPS</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/Shop/shop7.jpg"
+        style="width: 100%"
+      />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 1000); // Change image every 1 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>Paper dollmate ATELIER</h3>
+      <p>
+        Shop No.33, President plaza,vice city.<br />
+        Timings: 09.00am- 10.30pm<br />
+        email:- paperdollmate@gmail.com 
+      </p>
+      <br />
+      <h3>Dilly*Dally</h3>
+      <p>
+        Shop No.22,Sector 10,near Agra road,vice city.<br />
+        Timings: 10.00am- 11.00pm<br />
+        email:- dillydally@gmail.com
+      </p>
+      <br />
+      <h3>Sweet Laurel</h3>
+      <p>
+        Shop No.28, Trimurti complex,vice city.<br />
+        Timings: 10.00am- 10.00pm<br />
+        email:- sweetlaurel@gmail.com
+      </p>
+      <br />
+    </div>
+  </body>
+</html>

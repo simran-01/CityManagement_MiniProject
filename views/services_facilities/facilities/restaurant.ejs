@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/facilities_services1.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>RESTAURANTS</h1>
+
+    <div class="images">
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res1.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res2.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res3.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res4.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res5.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res6.jpg"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="/assests/facilities_images/restaurants/res7.jpg"
+        style="width: 100%"
+      />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="content">
+      <h3>OSSO</h3>
+      <p>
+        high St,bray,vice city.<br />
+        Timings:- 09.00am-1.00pm and 8.00pm-1.30am<br />
+        contact:- 022 1624 566828<br />
+        email:- osso@gmail.com 
+      </p>
+      <br />
+      <h3>FOOD INN</h3>
+      <p>
+        Sector 04,near sagar plaza,vice city.<br />
+        Timings:- 11.00am-2.00pm and 7.00pm-1.00am<br />
+        contact:- 022 5363 876654<br />
+        email:- foodinn@gmail.com
+      </p>
+      <br />
+      <h3>AJWA</h3>
+      <p>
+        Sector 23,rain villa,vice city.<br />
+        Timings:- 10.00am-2.00pm and 8.00pm-1.00am<br />
+        contact:-. 022 5678 897641<br />
+        email:- ajwa@gmail.com
+      </p>
+      <br />
+    </div>
+  </body>
+</html>
